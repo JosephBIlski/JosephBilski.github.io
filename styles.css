@@ -1,0 +1,210 @@
+#badjoke{
+    max-height:100%;
+    max-width: 100%;
+    animation-name: badjoke;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+@keyframes badjoke{
+    99% {transform: scale(1%) rotate(360deg)}
+    100% {transform: scale(0%)}
+}
+
+#everything{
+    display: none;
+}
+
+body{
+    overflow: scroll;
+}
+/*from w3schools.com */
+.bg1 {
+    background-image: url("megrey.jpg");
+    /* Full height */
+    max-height: 100%;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.snippet{
+    width: 25%;
+    max-height: 25vw;
+    background-color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: .75;
+    border: white 2px solid;
+}
+
+.banner{
+    max-height: 25vw;
+    left: 0%;
+    width: 100%;
+    background-color:black;
+    position: absolute;
+    z-index: 1;
+    opacity: .75;
+}
+
+.banner1{
+    top: 100%;
+    border: white 2px solid;
+}
+
+.banner2{
+    top: 200%;
+    border: white 2px solid;
+}
+
+.banner3{
+    top: 300%;
+    border: white 2px solid;
+}
+
+.banner4{
+    top: 400%;
+    border: white 2px solid;
+}
+h1{
+    font-family: "ABeeZee";
+    color: #f8f8ff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+h6{
+    font-family: "Abel";
+    color: #f8f8ff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+a:link{
+    color: #f8f8ff;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: white;
+}
+
+.header{
+    position:fixed;
+    top:0%;
+    width: 100%;
+    background: black;
+    z-index: 2;
+}
+
+.headerbutton{
+    position:fixed;
+    top:0%;
+    width: 100%;
+    background: white;
+}
+
+.tdfont{
+    color: black;
+    text-align: center;
+    font-family: "Abel";
+    font-size: 32px;
+}
+
+.td{
+    border: white 2px solid;
+}
+
+.tdb{
+    border: black 2px solid;
+    text-align: center;
+}
+
+.tdfontb{
+    color: black;
+    text-align: center;
+    font-family: "Abel";
+    font-size: 32px;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    z-index:50000000;
+}
+
+#buttonrun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black{
+    color: black;
+}
+
+.bgblack{
+    background-color: black;
+}
+
+.hallimg{
+    margin-right: 2%;
+    border-radius: 10px;
+    border: 2px black solid;
+    position: relative;
+    float: left;
+    z-index: 1;
+}
+
+.jumbotron{
+    background-color: #ff3d3d;
+    overflow: auto;
+}
+
+p{
+    color: #f8f8ff;
+    position: relative;
+    right: 0%;
+    text-align: left;
+    font-family: "Abel";
+    font-size: 32px;
+    padding-left: 5%;
+
+}
+
+#tetris{
+    width: 50%;
+    height: auto;
+}
+
+#nypic{
+    transform: rotate(90deg);
+    width: 50%;
+    height:auto;
+}
+
+#joke{
+    background-color: #ff3d3d;
+}
