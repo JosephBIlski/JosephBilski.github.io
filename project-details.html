@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="moreDetails.css">
+    <script src="SlideShowScript.js"></script>
+    <script src="projectManager.js"></script>
+    <title>Project Details - Joseph Bilski's Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box sidebar">
+            <h1>Joseph Bilski's Portfolio</h1>
+            <small>Hello and welcome to my portfolio site! 
+                My name is Joseph Bilski and I'm an undergraduate at Harvard studying Mechanical Engineering. 
+                I have a passion for trying to understand the world that surrounds us and using that understanding 
+                to help shape a world that benefits us all.</small><br>
+            <br>
+            <hr><br>
+            <u><a href="https://www.linkedin.com/in/joseph-bilski-499a50207/" target="_blank">LinkedIn</a></u><br>
+            <u><a href="mailto:josephbbilski@gmail.com">Email</a></u><br>
+            <u><a href="https://docs.google.com/document/d/1k0y9cJotrWEX7XOT54eGAaBs5AtkjHMV/edit?usp=sharing&amp;ouid=102081005405146453521&amp;rtpof=true&amp;sd=true" target="_blank">Resume</a></u>
+            <br>
+        </div>
+        <div class="box content">
+            <div class="proj col1">
+                <div class="title">
+                    <div class="titleText"><h2>Project Title</h2></div>
+                    <div class="returnText"><a id="returnLink" href="index.html"><i>Back to Home</i></a></div>
+                    <div class="hr">
+                        <hr />
+                        <br>
+                    </div>
+                </div>
+                <div class="slideshow-container" id='project-id' data-slide="1">
+                    <!-- Slides will be dynamically inserted here -->
+                </div>
+                <div class="desc">
+                    <br>
+                    <hr />
+                    <div class="subdesc">
+                        <!-- Project description will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id');
+            loadProjectDetails(projectId);
+        });
+    </script>
+</body>
+</html>

@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css.css">
-    <script src="SlideShowScript.js"></script> 
-    <title>Test Site</title>
+    <script src="SlideShowScript.js"></script>
+    <script src="projectManager.js"></script>
+    <title>Joseph Bilski's Portfolio</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="box sidebar">
-        <!-- <hr> -->
-        <h1>Joseph Bilski’s Portfolio</h1>
+        <h1>Joseph Bilski's Portfolio</h1>
         <small>Hello and welcome to my portfolio site! 
-            My name is Joseph Bilski and I’m an undergraduate at Harvard studying Mechanical Engineering. 
+            My name is Joseph Bilski and I'm an undergraduate at Harvard studying Mechanical Engineering. 
             I have a passion for trying to understand the world that surrounds us and using that understanding 
             to help shape a world that benefits us all.</small><br>
         <br>
@@ -21,248 +21,14 @@
         <u><a href="https://docs.google.com/document/d/1k0y9cJotrWEX7XOT54eGAaBs5AtkjHMV/edit?usp=sharing&amp;ouid=102081005405146453521&amp;rtpof=true&amp;sd=true" target="_blank">Resume</a></u>
         <br>
     </div>
-    <div class="box content">
-      <div class = "proj col1">
-        <div class="slideshow-container" id='BioRobotics Lab' data-slide="1">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1, this)"></span>
-                <span class="dot" onclick="currentSlide(2, this)"></span>
-                <span class="dot" onclick="currentSlide(3, this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">1 / 3</div> -->
-                <img src="BioRobotics Lab/springmeshprototype.png">
-              </div>
-              <div class="text">A spring mesh mechanism for 
-                jamming groups of fibers. This proof of 
-                concept demonstrates how the central mesh 
-                can toggle between jamming and unjamming fibers.</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1, this)"></span>
-                <span class="dot" onclick="currentSlide(2, this)"></span>
-                <span class="dot" onclick="currentSlide(3, this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">2 / 3</div> -->
-                <img src="BioRobotics Lab\smawithpennies.png">
-              </div>
-              <div class="text">Shape Memory Alloy (Nitinol) coil 
-                actuators, with a penny for scale.</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1, this)"></span>
-                <span class="dot" onclick="currentSlide(2, this)"></span>
-                <span class="dot" onclick="currentSlide(3, this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">3 / 3</div> -->
-                <img src="BioRobotics Lab\bendingtest.png">
-              </div>
-              <div class="text">Three point bending test on a group 
-                of mechanically jammed nylon fibers.</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <span class="prev" onclick="plusSlides(-1, this)">&#10094;</span>
-            <span class="next" onclick="plusSlides(1, this)">&#10095;</span>
-        </div>
-        <div class="desc">
-          <h2> BioRobotics Lab Research </h2>
-          <p>
-            My work in the Harvard Biorobotics Lab focused on a mesh-based non-vacuum mechanism to actuate mechanical jamming in bundles of fibers. Mechanical jamming is a structural phenomena in which a collection of loosely constrained materials exhibit vastly increased stiffnesses if an external pressure is applied. 
-          <br><br>Normally, this is achieved through putting the materials(sheets, fibers, beads, etc) in a bag and applying a vacuum. However, bags and atmospheric pressure limitations lead to a variety of design constraints, so my research was to create a way to actuate jamming without vacuum!
-          <br><br>
-          <a href="BioRoboticsLab.html"> Read More </a>
-         </p>
-        </div>
-      </div>
-      <div class = "proj col2">
-        <div class="slideshow-container" id='Thesis' data-slide="1">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1,this)"></span>
-                <span class="dot" onclick="currentSlide(2,this)"></span>
-                <span class="dot" onclick="currentSlide(3,this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">1 / 3</div> -->
-                <img src="BioRobotics Lab/springmeshprototype.png">
-              </div>
-              <div class="text">A spring mesh mechanism for 
-                jamming groups of fibers. This proof of 
-                concept demonstrates how the central mesh 
-                can toggle between jamming and unjamming fibers.</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1,this)"></span>
-                <span class="dot" onclick="currentSlide(2,this)"></span>
-                <span class="dot" onclick="currentSlide(3,this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">2 / 3</div> -->
-                <img src="BioRobotics Lab\smawithpennies.png">
-              </div>
-              <div class="text">Shape Memory Alloy (Nitinol) coil 
-                actuators, with a penny for scale.</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1,this)"></span>
-                <span class="dot" onclick="currentSlide(2,this)"></span>
-                <span class="dot" onclick="currentSlide(3,this)"></span>
-              </div>
-              <div class="image">
-                <!-- <div class="numbertext">3 / 3</div> -->
-                <img src="BioRobotics Lab\bendingtest.png">
-              </div>
-              <div class="text">Three point bending test on a group 
-                of mechanically jammed nylon fibers.</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <span class="prev" onclick="plusSlides(-1, this)">&#10094;</span>
-            <span class="next" onclick="plusSlides(1, this)">&#10095;</span>
-        </div>
-        <div class="desc">
-          <h2> BioRobotics Lab Research </h2>
-          <p>
-            My work in the Harvard Biorobotics Lab focused on a mesh-based non-vacuum mechanism to actuate mechanical jamming in bundles of fibers. Mechanical jamming is a structural phenomena in which a collection of loosely constrained materials exhibit vastly increased stiffnesses if an external pressure is applied. 
-          <br><br>Normally, this is achieved through putting the materials(sheets, fibers, beads, etc) in a bag and applying a vacuum. However, bags and atmospheric pressure limitations lead to a variety of design constraints, so my research was to create a way to actuate jamming without vacuum!
-          <br><br>
-          <a href="BioRoboticsLab.html"> Read More </a>
-         </p>
-        </div>
-      </div>
-      <div class = "proj col1">
-        <div class="slideshow-container" id='Thesis' data-slide="1">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">1 / 3</div> -->
-              <img src="BioRobotics Lab/springmeshprototype.png">
-            </div>
-            <div class="text">A spring mesh mechanism for 
-              jamming groups of fibers. This proof of 
-              concept demonstrates how the central mesh 
-              can toggle between jamming and unjamming fibers.</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">2 / 3</div> -->
-              <img src="BioRobotics Lab\smawithpennies.png">
-            </div>
-            <div class="text">Shape Memory Alloy (Nitinol) coil 
-              actuators, with a penny for scale.</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img src="BioRobotics Lab\bendingtest.png">
-            </div>
-            <div class="text">Three point bending test on a group 
-              of mechanically jammed nylon fibers.</div>
-          </div>
-        
-          <!-- Next and previous buttons -->
-          <span class="prev" onclick="plusSlides(-1, this)">&#10094;</span>
-          <span class="next" onclick="plusSlides(1, this)">&#10095;</span>
-      </div>
-      <div class="desc">
-        <h2> BioRobotics Lab Research </h2>
-        <p>
-          My work in the Harvard Biorobotics Lab focused on a mesh-based non-vacuum mechanism to actuate mechanical jamming in bundles of fibers. Mechanical jamming is a structural phenomena in which a collection of loosely constrained materials exhibit vastly increased stiffnesses if an external pressure is applied. 
-        <br><br>Normally, this is achieved through putting the materials(sheets, fibers, beads, etc) in a bag and applying a vacuum. However, bags and atmospheric pressure limitations lead to a variety of design constraints, so my research was to create a way to actuate jamming without vacuum!
-        </p>
-      </div>
-      </div>
-      <div class = "proj col2"> 
-        <div class="slideshow-container" id='Thesis' data-slide="1">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">1 / 3</div> -->
-              <img src="BioRobotics Lab/springmeshprototype.png">
-            </div>
-            <div class="text">A spring mesh mechanism for 
-              jamming groups of fibers. This proof of 
-              concept demonstrates how the central mesh 
-              can toggle between jamming and unjamming fibers.</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">2 / 3</div> -->
-              <img src="BioRobotics Lab\smawithpennies.png">
-            </div>
-            <div class="text">Shape Memory Alloy (Nitinol) coil 
-              actuators, with a penny for scale.</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div style="text-align:center" class="dots">
-              <span class="dot" onclick="currentSlide(1,this)"></span>
-              <span class="dot" onclick="currentSlide(2,this)"></span>
-              <span class="dot" onclick="currentSlide(3,this)"></span>
-            </div>
-            <div class="image">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img src="BioRobotics Lab\bendingtest.png">
-            </div>
-            <div class="text">Three point bending test on a group 
-              of mechanically jammed nylon fibers.</div>
-          </div>
-        
-          <!-- Next and previous buttons -->
-          <span class="prev" onclick="plusSlides(-1, this)">&#10094;</span>
-          <span class="next" onclick="plusSlides(1, this)">&#10095;</span>
-      </div>
-      <div class="desc">
-        <h2> BioRobotics Lab Research </h2>
-        <p>
-          My work in the Harvard Biorobotics Lab focused on a mesh-based non-vacuum mechanism to actuate mechanical jamming in bundles of fibers. Mechanical jamming is a structural phenomena in which a collection of loosely constrained materials exhibit vastly increased stiffnesses if an external pressure is applied. 
-        <br><br>Normally, this is achieved through putting the materials(sheets, fibers, beads, etc) in a bag and applying a vacuum. However, bags and atmospheric pressure limitations lead to a variety of design constraints, so my research was to create a way to actuate jamming without vacuum!
-        </p>
-      </div>
-      </div>
+    <div class="box content" id="projectContainer">
+        <!-- Projects will be dynamically inserted here -->
     </div>
-  </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        loadProjects();
+    });
+</script>
 </body>
-</html>  
+</html>

@@ -47,12 +47,12 @@ function autoSlide(n, ele){
   plusSlides(n, ele.children[0])
 }
 
+
 function initSlidesOnLoad() {
   let slideId = document.querySelectorAll('[class^=slideshow-container]');
-  let i;
-  for (i = 0; i<slideId.length; i++) {
-    showSlides(1, slideId[i]);
-    startTimer(slideId[i]);
+  for (let i = 0; i < slideId.length; i++) {
+      showSlides(1, slideId[i]);
+      startTimer(slideId[i]);
   }
 }
 
