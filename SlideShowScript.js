@@ -1,31 +1,70 @@
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["mySlides1", "mySlides2"];
-let slideIndex = [1,1];
-
+let slideId = [];
 window.addEventListener('load', initSlidesOnLoad);
-// showSlides(1, 1);
 
-function plusSlides(n, no) {
-  slideIndex[no] += n;
-  showSlides(slideIndex[no], no);
+function plusSlides(n, ele) { // expects  child of slideshow-container
+  const par = ele.parentElement;
+  par.dataset.slide = String(+par.dataset.slide + n);
+  showSlides(par.dataset.slide, par);
+  resetTimer(par);
 }
 
-function currentSlide(n, no) {
-  slideIndex[no] = n;
-  showSlides(n, no);
+function currentSlide(n, ele) { // expects to be called from highlighted buttons
+  let containerId = ele.parentElement.parentElement.parentElement;
+  containerId.dataset.slide = String(n);
+  showSlides(n, containerId);
+  resetTimer(containerId);
 }
 
-function showSlides(n, no) {
+function setDotHighlight(containerEle) {
+    let slideImages = containerEle.querySelectorAll('[class^=mySlides]');
+    let activeSlide = slideImages[+containerEle.dataset.slide - 1];
+    let allDots = activeSlide.querySelectorAll('.dots')[0].children;
+    allDots = [...allDots];
+    allDots.forEach(element => {
+      element.style.backgroundColor = "#fff";
+    });
+    // change corresponding dot to have a shaded BG
+    allDots[+containerEle.dataset.slide -1].style.backgroundColor = "#aaa";
+}
+
+function showSlides(n, slideId) {
+  //slideId is a misnomer, it's actually the div parent element with 
+  // class 'slideshow-container'
   let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
+  let x = slideId.querySelectorAll('[class^=mySlides]');
+  if (n > x.length) {slideId.dataset.slide = String(1)}
+  if (n < 1) {slideId.dataset.slide = String(x.length)}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slideIndex[no] - 1].style.display = "flex";
+  x[Number(slideId.dataset.slide) - 1].style.display = "grid";
+  setDotHighlight(slideId);
+  // setTimeout(setDotHighlight, 50, slideId);
 } 
 
+function autoSlide(n, ele){
+  plusSlides(n, ele.children[0])
+}
+
 function initSlidesOnLoad() {
-  showSlides(1, 0);
+  let slideId = document.querySelectorAll('[class^=slideshow-container]');
+  let i;
+  for (i = 0; i<slideId.length; i++) {
+    showSlides(1, slideId[i]);
+    startTimer(slideId[i]);
+  }
+}
+
+function startTimer(ele) {
+  ele.timer = setInterval(() => {
+      autoSlide(1, ele);
+  }, 12000);
+}
+
+function resetTimer(ele) {
+  clearInterval(ele.timer);
+  ele.timer = setInterval(() => {
+    autoSlide(1, ele);
+}, 12000);
 }

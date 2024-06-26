@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  overscroll-behavior-y: none;
+  font-family: 'Montserrat', 'sans-serif';
+  /* font-family: 'Baskervville', serif; */
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: 'Baskervville', serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+    margin: 0px;
+    overscroll-behavior-y: none;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.titleText {
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.returnText {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    font-size: .5em;
+}
+
+.content {
+    grid-area: content;
+}
+
+#returnLink {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+        "content sidebar";
+    background-color: #fff;
+    /* color: #444; */
+    overscroll-behavior-y: none;
+}
+
+
+.box {
+    /* color: #444; */
+    font-size: 150%;
+}
+
+.proj {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50% 45%;
+    grid-template-areas:
+        "title"
+        "slideshow-container"
+        "desc";
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 95%;
+    height: 100vh;
+    max-height: 100vh;
+    /* max-height: vh; */
+    font-size: 150%;
+    overflow: hidden;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "titleText returnText"
+    "hr hr";
+    height: 60%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* font-size: 1.2em; */
+}
+
+.hr {
+    grid-area: hr;
+}
+
+.sidebar {
+    background-color: rgb(208, 204, 222);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    /* padding-top: 2%;
+padding-bottom: 2%; */
+    padding-left: 8%;
+    padding-right: 8%;
+    border-left: solid 2px;
+}
+
+.col1 {
+    background-color: #ffffff;
+}
+
+.col2 {
+    background-color: #f1f1f1;
+}
+
+.image {
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+/* slide show stuff */
+.slideshow-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* vertical-align: top; */
+    /* border-right: dashed; */
+    padding-right: 2%;
+    padding-top: 2%;
+
+}
+
+.desc {
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: .5em;
+    height: 100%;
+    /* overflow: scroll; */
+}
+
+.subdesc {
+    height: 100%;
+    overflow: scroll;
+    padding:2%;
+    padding-top:0%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    grid-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 85% 15%;
+    grid-template-areas:
+        "image"
+        "text";
+    width: 40%;
+    height: 95%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+img {
+    /* height: 100%; */
+    /* max-height: 100%;*/
+    width: 98%;
+    max-height: 98%;
+    /* height: 75%; */
+    border: solid;
+    border-radius: 10px;
+    position: relative;
+    /* top:0; */
+    z-index: 0;
+    /* left: 50%; */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 30%;
+    height: 30%;
+    width: 5%;
+    padding: 1%;
+    /* padding: 5%; */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5em;
+    /* transition: 0.6s ease; */
+    border-radius: 3px;
+    /* user-select: none; */
+    z-index: 1;
+    /* background-color: rgba(0,0,0,0.8); */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 2.3%;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 0%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+.text {
+    color: #000000;
+    /* font-size: 15px; */
+    position: relative;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2%;
+    font-size: .7rem;
+    place-self: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: .3em;
+    padding: 1% 1%;
+    position: absolute;
+    width: 8%;
+    top: 3%;
+    right: 46%;
+    /* text-shadow:
+.5px .5px 0 #000,
+-.5px .5px 0 #000,
+-.7px -.5px 0 #000,
+.5px -.5px 0 #000; */
+    /* outline: solid; */
+    z-index: 1;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    z-index: 1;
+    bottom: 18%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border: solid 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+#returnLink {
+    /* border: solid; */
+    z-index: 1;
+}

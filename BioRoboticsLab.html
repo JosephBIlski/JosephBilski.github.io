@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="moreDetails.css">
+    <script src="SlideShowScript.js"></script>
+    <title>Test Site</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box sidebar">
+            <!-- <hr> -->
+            <h1>Joseph Bilski’s Portfolio</h1>
+            <small>Hello and welcome to my portfolio site!
+                My name is Joseph Bilski and I’m an undergraduate at Harvard studying Mechanical Engineering.
+                I have a passion for trying to understand the world that surrounds us and using that understanding
+                to help shape a world that benefits us all.</small><br>
+            <br>
+            <hr><br>
+            <u><a href="https://www.linkedin.com/in/joseph-bilski-499a50207/" target="_blank">LinkedIn</a></u><br>
+            <u><a href="mailto:josephbbilski@gmail.com">Email</a></u><br>
+            <u><a href="https://docs.google.com/document/d/1k0y9cJotrWEX7XOT54eGAaBs5AtkjHMV/edit?usp=sharing&amp;ouid=102081005405146453521&amp;rtpof=true&amp;sd=true"
+                    target="_blank">Resume</a></u>
+            <br>
+        </div>
+        <div class="box content">
+            <div class="proj col1">
+                <div class="title">
+                    <div class="titleText"><h2>Harvard BioRobotics Lab</h2></div>
+                    <div class="returnText"><a id="returnLink" href="index.html"><i>Back to Home</i></a></div>
+                    <div class="hr">
+                        <hr />
+                        <br>
+                    </div>
+                </div>
+                <div class="slideshow-container" id='BioRobotics Lab' data-slide="1">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div style="text-align:center" class="dots">
+                            <span class="dot" onclick="currentSlide(1, this)"></span>
+                            <span class="dot" onclick="currentSlide(2, this)"></span>
+                            <span class="dot" onclick="currentSlide(3, this)"></span>
+                        </div>
+                        <div class="image">
+                            <!-- <div class="numbertext">1 / 3</div> -->
+                            <img src="BioRobotics Lab/springmeshprototype.png">
+                        </div>
+                        <div class="text">A spring mesh mechanism for
+                            jamming groups of fibers. This proof of
+                            concept demonstrates how the central mesh
+                            can toggle between jamming and unjamming fibers.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div style="text-align:center" class="dots">
+                            <span class="dot" onclick="currentSlide(1, this)"></span>
+                            <span class="dot" onclick="currentSlide(2, this)"></span>
+                            <span class="dot" onclick="currentSlide(3, this)"></span>
+                        </div>
+                        <div class="image">
+                            <!-- <div class="numbertext">2 / 3</div> -->
+                            <img src="BioRobotics Lab\smawithpennies.png">
+                        </div>
+                        <div class="text">Shape Memory Alloy (Nitinol) coil
+                            actuators, with a penny for scale.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div style="text-align:center" class="dots">
+                            <span class="dot" onclick="currentSlide(1, this)"></span>
+                            <span class="dot" onclick="currentSlide(2, this)"></span>
+                            <span class="dot" onclick="currentSlide(3, this)"></span>
+                        </div>
+                        <div class="image">
+                            <!-- <div class="numbertext">3 / 3</div> -->
+                            <img src="BioRobotics Lab\bendingtest.png">
+                        </div>
+                        <div class="text">Three point bending test on a group
+                            of mechanically jammed nylon fibers.</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <span class="prev" onclick="plusSlides(-1, this)">&#10094;</span>
+                    <span class="next" onclick="plusSlides(1, this)">&#10095;</span>
+                </div>
+                <div class="desc">
+                    <br>
+                    <hr />
+                    <div class="subdesc">
+                        <ul>
+                            <li>My work in the Harvard BioRobotics lab revolved around designing a novel mechanism to
+                                actuate mechanical jamming in collections of fibers without the use of vacuum pressure.
+                            </li>
+                            <li>The motivation behind the project was to separate the desirable quality of variable
+                                stiffness
+                                from mechanically jamming fibers together from the design constraints that vacuum
+                                pressure
+                                (the usual mechanism by which mechanical jamming is achieved) imposes.
+                            </li>
+                            <li>I utilized analytical models to determine relationships between the design parameters of
+                                the
+                                system and the expected performance, and utilized MATLAB to visualize these
+                                relationships as
+                                well as parse experimental data to evaluate model accuracy.
+                            </li>
+                            <li>I used an Instron machine as well as sensors connected to an Arduino to collect
+                                experimental data
+                                to inform design.
+                            </li>
+                            <li>The final design was a mesh that radially contracts with axial extension pretensioned by
+                                a compression
+                                spring, with shape memory alloy coil actuators to counteract the spring tension as
+                                needed. The final device
+                                works by switching between applying radial pressure to fibers in its passive, ‘jammed’
+                                state where the mesh
+                                is tensioned by the spring, and no pressure in its actuated ‘unjammed’ state where the
+                                shape memory alloys
+                                relieve the compression spring tension.&nbsp;
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
