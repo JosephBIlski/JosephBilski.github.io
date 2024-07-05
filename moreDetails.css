@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 p {
@@ -95,7 +95,7 @@ body {
 
 .title {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 90% 10%;
     grid-template-areas: "titleText returnText"
     "hr hr";
@@ -133,8 +133,9 @@ padding-bottom: 2%; */
 
 .image {
     /* border: solid; */
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    /* max-height: 100%; */
+    /* width: 100%; */
     text-align: center;
     /* justify-content: center; */
 }
@@ -160,11 +161,12 @@ padding-bottom: 2%; */
 
 .desc {
     padding-top: 0%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
     padding-left: 8%;
     padding-right: 8%;
-    font-size: .5em;
-    height: 100%;
+    font-size: .4em;
+    max-height: 95%;
+
     /* overflow: scroll; */
 }
 
@@ -290,7 +292,7 @@ background-color: rgba(0,0,0,0.8);
     width: 50%;
     left: 25%;
     z-index: 1;
-    bottom: 18%;
+    bottom: 12%;
 }
 
 .dot {
