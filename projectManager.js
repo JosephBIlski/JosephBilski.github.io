@@ -30,12 +30,12 @@ const projects = [
     },
     {
         id: 'ES128',
-        title: 'Computational Solid/Structural Mechanics Final Project - Simulated Living Hinges',
+        title: 'Computational Solid/Structural Mechanics Project - Simulated Living Hinges',
         images: [
             { src: 'ES128/FoldingSim.gif', caption: 'A simulation of a living hinge using material properties of Corning Gorrila Glass 3. The hinge geometries in this project were parameterized to allow the testing and comparison of multiple shapes.' },
             { src: 'ES128/BendingShapes.png', caption: 'An overview of the model used for the living hinge, as well as the different hinge shapes tested.'}
         ],  
-        shortDescription: `For the final project in Harvard's course on the finite element method, "Computational Solid and Structural Mechanics", I worked in a team of two to investigate the effect of different geometries on the maximum stress in a living hinge.
+        shortDescription: `For the final project in my finite element method course, "Computational Solid and Structural Mechanics", I worked in a team of two to investigate the effect of different geometries on the maximum stress in a living hinge.
         <br> <br> To investigate this, we utilized the FEA software Abaqus in conjunction with its python scripting module to create a parametrized model where we could prescribe different geometries and compare their outputs.`,
         fullDescription: `For the final project in the course "Computational Solid and Structural Mechanics" which primarily focused on the finite element method, I worked in a team of two to investigate the effect of different geometries on the maximum stress in a living hinge.
          <br> <br> To accomplish this, we utilized the python scripting module in Abaqus to generate a simple hinge model in which we could vary the geometry of the connecting hinge.
