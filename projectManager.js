@@ -57,7 +57,7 @@ const projects = [
         title: 'Informal Robotics - Final Project',
         images: [
             { src: 'Informal Robotics/viewsOfRobot.png', caption: 'Final robot design for the class. The main robot body is made from lasercut chipboard, and movement is achieved through attaching electronics with 3D printed mounts.' },
-            { src: 'Informal Robotics/WalkingForward.gif', caption: 'The robot achieving forward motion. In order to move, the robot shifts its weight to cause one leg to act as a anchoring point while sliding the opposite leg forward. This process is then repeated across its gait.'},
+            { src: 'Informal Robotics/walkingforward.gif', caption: 'The robot achieving forward motion. In order to move, the robot shifts its weight to cause one leg to act as a anchoring point while sliding the opposite leg forward. This process is then repeated across its gait.'},
             { src: 'Informal Robotics/CCWturn.gif', caption: 'The robot performing a counter-clockwise turn. This is accomplished similar to the forwards motion, but keeping the left leg fixed in place.' },
             { src: 'Informal Robotics/CWturn.gif', caption: 'The robot performing a clockwise turn. This is accomplished similar to the forwards motion, but keeping the right leg fixed in place.' },
             { src: 'Informal Robotics/axon.jpg', caption: 'Exploded view of the robot body and main components.' },
