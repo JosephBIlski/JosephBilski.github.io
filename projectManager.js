@@ -128,7 +128,7 @@ const projects = [
             { src: 'GPGPUFEA/BunnySim.gif', caption: 'A simulation of the Stanford bunny model under gravity using 1-D FEA bar elements' },
         ],  
         shortDescription: `To gain familiarity with GPU programming and 3-D graphics, I'm working on a finite element simulator that takes advantage of parallel computations on 
-        a GPU. <br><br> Currently, the simulator takes in a .obj file, reconstructs it out of 1-D FEA bar elements, and simulates a gravity load.`,
+        a GPU. <br><br> Currently, the simulator takes in a .obj file, reconstructs it out of 1-D FEA bar elements, and simulates a gravity load. <br><br> Try it <a href="josephbilski.github.io/GPGPU_FEA_SIM"> here! </a>`,
         fullDescription: `To gain familiarity with GPU programming and 3-D graphics, I'm working on a finite element simulator that takes advantage of parallel computations on 
         a GPU. <br><br> Currently, the simulator takes in a .obj file, reconstructs it out of 1-D FEA bar elements, and simulates a gravity load.
         `,
