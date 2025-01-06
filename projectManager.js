@@ -134,6 +134,24 @@ const projects = [
         Try it<a href="GPGPU_FEA_SIM"> here! </a> <br> <br>`,
         detailsPage: 'project-details.html?id=GPGPUFEA'
     },
+    {
+        id: 'MechGal',
+        title: 'Mechanisms Gallery',
+        images: [
+            { src: 'MechGal/DifferentialDrive.gif', caption: 'An animation of a differential driving two wheels moving at different speeds.' },
+            { src: 'MechGal/AckermannSteering.gif', caption: 'An animation of two wheels turning utilizing the Ackermann steering geometry.' },
+            { src: 'MechGal/jarlidManualAnim.gif', caption: 'An animation of a common compliant mechanism used to latch a jar lid to its body.' },
+            { src: 'MechGal/RollerClutch.gif', caption: 'An animation of the operating principles of a roller clutch' },
+            { src: 'MechGal/stewartplatformv2.gif', caption: 'An animation of a Stewart Platform, a 6-DOF mechanism controlled by 6 linear actuators.' },
+        ],  
+        shortDescription: `A small compilation of animated mechanisms I've found interesting. <br/><br/>
+        The full gallery can be found <a href="https://josephbilski.notion.site/Mechanisms-Gallery-1705beb3511980979051dc3fa008d161">here </a> <br/><br/>
+        Made in Rhino 8 using Bongo 3.`,
+        fullDescription: `A small compilation of animated mechanisms I've found interesting. <br/><br/>
+        The full gallery can be found <a href="https://josephbilski.notion.site/Mechanisms-Gallery-1705beb3511980979051dc3fa008d161">here </a> <br/><br/>
+        Made in Rhino 8 using Bongo 3.`,
+        detailsPage: 'project-details.html?id=MechGal'
+    },
     // Add more projects here
 ];
 
